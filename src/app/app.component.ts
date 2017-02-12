@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'todo-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+     <todo-list-manager class="todo-app"></todo-list-manager>
+
+    `,
+  styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  title = 'todo works!';
+  constructor() {
+  }
+
+  ngOnInit() {
+
+  }
 }
